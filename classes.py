@@ -25,8 +25,8 @@ class Pemain:
      def getNama(self):
           return self.nama
      
-     def diserang(self, serangan):
-          return self.health + serangan
+     # def diserang(self, serangan):
+     #      return self.health + serangan
 
 class Player(Pemain):
      def __init__(self,idnya,nama,health,level,hero,weapon):
@@ -80,6 +80,6 @@ class Hero:
           return self.armor
 
 
-a = Player(1,'aku',100,1,1,1)
-print(a.getId())
+# a = Player(1,'aku',100,1,1,1)
+# print(a.getId())
 
