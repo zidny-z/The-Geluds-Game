@@ -9,16 +9,16 @@ pagar = str(48 * '#')
 
 class start:
      def __init__(self):
-          try:
-               self.mydb = mysql.connector.connect(
-               host="localhost",
-               user="root",
-               database="the geluds game"
-               )
-               self.cursor = self.mydb.cursor()          
-          except mysql.connector.Error as e:
-               print(e)
-          #mulai
+          # try:
+          self.mydb = mysql.connector.connect(
+          host="localhost",
+          user="root",
+          database="the geluds game"
+          )
+          self.cursor = self.mydb.cursor()          
+          # except mysql.connector.Error as e:
+          #      print(e)
+          # #mulai
           self.menu()
 
      def displayProfil(self):
